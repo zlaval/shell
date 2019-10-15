@@ -3,3 +3,9 @@ zalan
    my name
        is
 zalan
+Tue Oct 15 23:30:42 CEST 2019
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 23:03 ?        00:00:00 /init
+root         7     1  0 23:03 tty1     00:00:00 /init
+zalan        8     7  0 23:03 tty1     00:00:00 -bash
+zalan       49     8  0 23:30 tty1     00:00:00 /bin/bash ./for.sh
