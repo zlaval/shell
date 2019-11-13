@@ -1,0 +1,72 @@
+//powershellkonyv.hu
+
+
+  Id CommandLine                                                                                                                                                                    
+  -- -----------                                                                                                                                                                    
+   1 Set-ExecutionPolicy -ExecutionPolicy AllSigned                                                                                                                                 
+   2 clear                                                                                                                                                                          
+   3 ls                                                                                                                                                                             
+   4 3*6                                                                                                                                                                            
+   5 Get-History > .\Desktop\naplo.txt                                                                                                                                              
+   6 Get-Content .\Desktop\naplo.txt                                                                                                                                                
+   7 cat .\Desktop\naplo.txt                                                                                                                                                        
+   8 car .\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt                                                                                          
+   9 cat .\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt                                                                                          
+  10 gal h                                                                                                                                                                          
+  11 $PSVersionTable                                                                                                                                                                
+  12 cmd /c dir /od                                                                                                                                                                 
+  13 gal nal                                                                                                                                                                        
+  14 nal i ipconfig                                                                                                                                                                 
+  15 i                                                                                                                                                                              
+  16 man ls                                                                                                                                                                         
+  17 man ls --examples                                                                                                                                                              
+  18 man ls -examples                                                                                                                                                               
+  19 New-Item 20191113 -ItemType Directory                                                                                                                                          
+  20 New-Item 20191113 -ItemType Directory -WhatIf                                                                                                                                  
+  21 New-Item 20191114 -ItemType Directory -WhatIf                                                                                                                                  
+  22 New-Item 20191114 -ItemType Directory -Confirm                                                                                                                                 
+  23 Get-Command                                                                                                                                                                    
+  24 $d = Get-Date                                                                                                                                                                  
+  25 $d                                                                                                                                                                             
+  26 $d.Year                                                                                                                                                                        
+  27 Measure-Object                                                                                                                                                                 
+  28 ls | Measure-Object                                                                                                                                                            
+  29 Get-Help Measure-Object                                                                                                                                                        
+  30 Write-Host "hello"                                                                                                                                                             
+  31 gal echo                                                                                                                                                                       
+  32 Get-ChildItem C:\Windows\ -Filter *.dll                                                                                                                                        
+  33 Get-                                                                                                                                                                           
+  34 gal rm                                                                                                                                                                         
+  35 gal cp                                                                                                                                                                         
+  36 Invoke-Item C:\Windows\System32\calc.exe                                                                                                                                       
+  37 gal ps                                                                                                                                                                         
+  38 Get-Process                                                                                                                                                                    
+  39 gal kill                                                                                                                                                                       
+  40 Invoke-Item C:\Windows\System32\calc.exe                                                                                                                                       
+  41 Get-Process Calculator                                                                                                                                                         
+  42 Stop-Process 10148                                                                                                                                                             
+  43 Get-History > .\Desktop\naplo.txt                                                                                                                                              
+  44 Get-ChildItem C:\Windows\ | where {$_.Length -gt 100}                                                                                                                          
+  45 Get-ChildItem ./ -Recurse | Sort-Object -Property LastWriteTime -Descending                                                                                                    
+  46 $sz="hello" + "world"                                                                                                                                                          
+  47 $sz                                                                                                                                                                            
+  48 $z=" hello"                                                                                                                                                                    
+  49 $sz+$z                                                                                                                                                                         
+  50 "hello $z"                                                                                                                                                                     
+  51 'hello $z'                                                                                                                                                                     
+  52 Get-History > .\Desktop\naplo.txt                                                                                                                                              
+  53 $a=1,2,3,4,5                                                                                                                                                                   
+  54 $a                                                                                                                                                                             
+  55 $a[3]                                                                                                                                                                          
+  56 $b=(1,2)(3,4)                                                                                                                                                                  
+  57 $b=(1,2),(3,4)                                                                                                                                                                 
+  58 $b                                                                                                                                                                             
+  59 $b[0][1]                                                                                                                                                                       
+  60 $b[1]                                                                                                                                                                          
+  61 $a.Count                                                                                                                                                                       
+  62 $a.Length                                                                                                                                                                      
+  63 $a.ForEach($_ + 3)                                                                                                                                                             
+  64 $a                                                                                                                                                                             
+  65 $a += 5,6,7                                                                                                                                                                    
+  66 $a                                                                                                                                                                             
+
