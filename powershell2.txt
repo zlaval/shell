@@ -18,3 +18,26 @@ echo $sum
 $mul= $args.GetValue(0) * $args.GetValue(1)
 echo $mul
 ************************************************
+foreach($line in Get-Content .\desk.txt) {
+   $array=$line.Split(" ")
+   echo $array[1]
+}
+***********************************************
+
+$rnd=New-Object System.Random
+
+Remove-Item .\neptun2.txt
+foreach($line in Get-Content .\neptun.txt) {
+  
+  $name=$line
+  $rndNumber=$rnd.Next(10000,9999999)
+
+  echo $name - $rndNumber
+
+  $upw=$name+ " - " +$rndNumber
+
+  Add-Content neptun2.txt  -Value $upw
+
+}
+
+*****************************************
