@@ -1,1 +1,20 @@
+powershellkonyv.hu
 
+
+$count=0
+
+foreach($line in Get-Content .\desk.txt) {
+   $i++
+}
+
+echo $i
+
+*************************************************
+echo $args.Length
+
+$sum= $args.GetValue(0) + $args.GetValue(1)
+echo $sum
+
+$mul= $args.GetValue(0) * $args.GetValue(1)
+echo $mul
+************************************************
